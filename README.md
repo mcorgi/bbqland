@@ -30,9 +30,9 @@ that still need input; they're hidden on the live site.
 - **Grand opening: Wednesday, Oct 21, 2026.** The red banner and the line under
   the hero count down automatically, then switch to "Grand opening today!" and
   "Now open". The date is `GRAND_OPENING` in `js/main.js`.
-- **Hours change at the grand opening.** Edit the `HOURS` block at the top of `js/main.js`. The current
-  hours were filed with the town in 2025 and aren't confirmed. Set
-  `confirmed: true` to turn on the live "Open now / Closed" badge.
+- **Hours may change at the grand opening.** Edit the `HOURS` block at the top of `js/main.js`.
+  Current soft-opening hours: Mon–Thu 4–9 PM, Fri 4–10 PM, Sat–Sun 11:30 AM–10 PM.
+  The live "Open now / Closed" badge is on (`confirmed: true`); set it to false if the hours are in doubt.
 - **Distributor.** On `about.html`, fill in the `[Distributor name]` card and
   remove its `dev-only` class.
 - **Set contents.** Meat Lover / Chef's Selection descriptions are general,

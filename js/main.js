@@ -6,22 +6,21 @@
    the "Open now" badge. Times are 24h "HH:MM", Eastern time.
    Use null for a closed day. Close after midnight like "24:00".
 
-   These are the hours filed with the Town of Shrewsbury (2025).
-   Soft-opening hours may differ. Once the owners confirm, update
-   the times and set `confirmed: true` to turn on the live
-   Open/Closed badge.
+   Soft-opening hours (October 2026). These may change at the
+   Oct 21 grand opening. `confirmed: true` turns on the live
+   Open/Closed badge; set it to false if the hours are in doubt.
    ───────────────────────────────────────────────────────────── */
 const HOURS = {
-  confirmed: false,
+  confirmed: true,
   // Index 0 = Sunday (matches Date.getDay())
   days: [
-    ['11:00', '23:00'], // Sunday
-    ['11:00', '23:00'], // Monday
-    ['11:00', '23:00'], // Tuesday
-    ['11:00', '23:00'], // Wednesday
-    ['11:00', '23:00'], // Thursday
-    ['11:00', '24:00'], // Friday
-    ['11:00', '24:00'], // Saturday
+    ['11:30', '22:00'], // Sunday
+    ['16:00', '21:00'], // Monday
+    ['16:00', '21:00'], // Tuesday
+    ['16:00', '21:00'], // Wednesday
+    ['16:00', '21:00'], // Thursday
+    ['16:00', '22:00'], // Friday
+    ['11:30', '22:00'], // Saturday
   ],
 };
 
