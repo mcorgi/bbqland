@@ -14,6 +14,20 @@ The original phone photos are kept untouched in `_originals/`.
 | `food/food-2`                | Cuts on the brass grill                | The Room, Menu hero + grill banner       |
 | `food/food-3`                | Prime cuts, kabocha, lettuce wraps     | Favorites, Meat Lover set, gallery       |
 | `food/food-4`                | Naengmyeon                             | Favorites, Kitchen banner, gallery       |
+| `interior/interior-bar`      | The long bar counter                   | Gallery                                  |
+| `interior/interior-window`   | Window table with BBQ LAND planters    | Gallery                                  |
+| `interior/interior-counter`  | Lucky cats & orchids on the counter    | Gallery                                  |
+| `interior/interior-jade`     | Jade guardian statues                  | Gallery                                  |
+| `food/kimchi`                | Signature kimchi                       | Home "little things", Menu A01           |
+| `food/sauces`                | Dipping sauces & seasonings card       | Home "little things", Menu sauces        |
+| `food/yogurt-pudding`        | House yogurt pudding                   | Home "little things", Menu D01           |
+| `food/mango-yogurt`          | Mango coconut yogurt shake             | Home "little things", Drinks Y17         |
+| `food/fried-tofu`            | Shichimi fried tofu                    | Menu A16                                 |
+| `food/short-rib`             | Marbled short rib on a bamboo leaf     | Gallery                                  |
+| `food/wagyu-stone`           | Wagyu on a lava stone, white pebbles   | Gallery                                  |
+| `food/soba`                  | Noodles with pickled ginger            | Gallery                                  |
+| `menu/menu-main`             | Photo of the printed menu (rotated upright, 2800px so text stays legible) | Menu "Printed Menu" |
+| `menu/menu-sets`             | Photo of the printed signature sets page | Menu "Printed Menu"                    |
 | `menu-board.jpg`             | The printed menu in the window         | Reference only (slogan, about text, chef's picks) |
 | `brush.svg`                  | Ink brush stroke behind the slogan     | Hero, About page                         |
 

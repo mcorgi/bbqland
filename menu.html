@@ -58,6 +58,7 @@
         <div class="btn-group" data-enter="4">
           <a href="https://toast.app/r/bbq-land-31-boston-turnpike/order" class="btn btn--red" target="_blank" rel="noopener">Order Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
           <a href="drinks.html" class="btn">Drinks</a>
+          <a href="#printed-menu" class="btn">See the Printed Menu</a>
         </div>
       </div>
     </header>
@@ -65,7 +66,7 @@
     <div class="menu-tools">
       <div class="container menu-tools__inner">
         <nav class="menu-tabs" aria-label="Menu sections">
-          <a href="#sets">Sets</a><a href="#beef">Beef</a><a href="#pork">Pork</a><a href="#lamb">Lamb</a><a href="#poultry">Poultry</a><a href="#seafood">Seafood</a><a href="#veg">Veggies</a><a href="#grill-addons">Add-ons</a><a href="#appetizers">Appetizers</a><a href="#fried">Fried</a><a href="#rice-noodles">Rice &amp; Noodles</a><a href="#soup">Soup</a><a href="#dessert">Dessert</a>
+          <a href="#sets">Sets</a><a href="#beef">Beef</a><a href="#pork">Pork</a><a href="#lamb">Lamb</a><a href="#poultry">Poultry</a><a href="#seafood">Seafood</a><a href="#veg">Veggies</a><a href="#grill-addons">Add-ons</a><a href="#sauces">Sauces</a><a href="#appetizers">Appetizers</a><a href="#fried">Fried</a><a href="#rice-noodles">Rice &amp; Noodles</a><a href="#soup">Soup</a><a href="#dessert">Dessert</a>
         </nav>
         <div class="menu-filters" role="group" aria-label="Filter">
           <button type="button" class="chip" data-filter="chef" aria-pressed="false">Chef&rsquo;s picks</button>
@@ -95,6 +96,21 @@
             <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 2</span><h3>Chef&rsquo;s Selection</h3><strong>$80</strong></a>
             <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 4</span><h3>Meat Lover</h3><strong>$198</strong></a>
             <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 4</span><h3>Chef&rsquo;s Selection</h3><strong>$168</strong></a>
+          </div>
+        </div>
+
+        <div data-menu-group id="printed-menu" class="printed-menu">
+          <div class="menu-section__head" style="margin-bottom: 20px"><h2 class="menu-section__title">The Printed Menu</h2><span class="menu-section__cn" lang="zh">菜单</span></div>
+          <p class="menu-section__note" style="margin: -8px 0 18px">The same menu you&rsquo;ll find at the table. Tap a page to take a closer look.</p>
+          <div class="printed-menu__grid reveal">
+            <button type="button" class="printed-menu__item media" data-lightbox="images/menu/menu-main.jpg" aria-label="View photo: The printed BBQ Land menu">
+              <img src="images/menu/menu-main-sm.jpg" alt="The printed BBQ Land menu: grill, kitchen, soups, desserts and drinks" loading="lazy" decoding="async" />
+              <span class="media__cap">Full Menu</span>
+            </button>
+            <button type="button" class="printed-menu__item media" data-lightbox="images/menu/menu-sets.jpg" aria-label="View photo: The printed signature sets menu">
+              <img src="images/menu/menu-sets-sm.jpg" alt="The printed signature sets menu: Meat Lover and Chef&rsquo;s Selection for 2 and for 4" loading="lazy" decoding="async" />
+              <span class="media__cap">Signature Sets</span>
+            </button>
           </div>
         </div>
 
@@ -415,6 +431,35 @@
               </article>
             </div>
           </section>
+          <section class="menu-section menu-section--full reveal" id="sauces" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Dipping Sauces &amp; Seasonings</h2>
+              <span class="menu-section__cn" lang="zh">蘸料</span>
+            </header>
+            <div class="sauces">
+              <button type="button" class="sauces__photo media" data-lightbox="images/food/sauces.jpg" aria-label="View photo: The dipping sauces and seasonings card">
+                <img src="images/food/sauces-sm.jpg" alt="The dipping sauces and seasonings card at the table" loading="lazy" decoding="async" />
+              </button>
+              <div class="menu-list">
+                <article class="menu-item" data-menu-item data-tags="">
+                  <h3 class="menu-item__name">Sweet Soy</h3>
+                  <p class="menu-item__desc">Sweet, savory, umami. A smooth, balanced soy dip that lets the meat lead. Try it with ribeye, filet mignon, beef tongue, or A5 wagyu.</p>
+                </article>
+                <article class="menu-item" data-menu-item data-tags="">
+                  <h3 class="menu-item__name">Fruit &amp; Ginger Sauce</h3>
+                  <p class="menu-item__desc">Fruity and aromatic, finished with subtle notes of red and white wine. Great with beef, pork, and marinated meats.</p>
+                </article>
+                <article class="menu-item" data-menu-item data-tags="">
+                  <h3 class="menu-item__name">Savory Chili Seasoning</h3>
+                  <p class="menu-item__desc">A dry blend of toasted soybeans, chili, cumin, and Sichuan peppercorn. Smoky, nutty, gently spicy. Made for pork belly, pork jowl, lamb, and short rib.</p>
+                </article>
+                <article class="menu-item" data-menu-item data-tags="">
+                  <h3 class="menu-item__name">Ssamjang</h3>
+                  <p class="menu-item__desc">Rich, savory, bold. Fermented soybean paste with a touch of chili heat, for richer cuts and lettuce wraps.</p>
+                </article>
+              </div>
+            </div>
+          </section>
           </div>
         </div>
 
@@ -430,14 +475,19 @@
               <span class="menu-section__cn" lang="zh">开胃菜</span>
             </header>
             <div class="menu-list">
-              <article class="menu-item" data-menu-item data-id="A01" data-tags="chef veg">
-                <div class="menu-item__header">
-                  <h3 class="menu-item__name"><span class="menu-item__code">A01</span>Signature Kimchi<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span><span class="badge badge--veg" title="Vegetarian"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l8-8"/></svg><span class="sr-only">Vegetarian</span></span></h3>
-                  <span class="menu-item__leader" aria-hidden="true"></span>
-                  <span class="menu-item__price">$4</span>
+              <article class="menu-item menu-item--photo" data-menu-item data-id="A01" data-tags="chef veg">
+                <button type="button" class="menu-item__photo media" data-lightbox="images/food/kimchi.jpg" aria-label="View photo: Signature kimchi">
+                  <img src="images/food/kimchi-sm.jpg" alt="Signature kimchi" loading="lazy" decoding="async" />
+                </button>
+                <div class="menu-item__body">
+                  <div class="menu-item__header">
+                    <h3 class="menu-item__name"><span class="menu-item__code">A01</span>Signature Kimchi<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span><span class="badge badge--veg" title="Vegetarian"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l8-8"/></svg><span class="sr-only">Vegetarian</span></span></h3>
+                    <span class="menu-item__leader" aria-hidden="true"></span>
+                    <span class="menu-item__price">$4</span>
+                  </div>
+                  <p class="menu-item__cn" lang="zh">招牌泡菜</p>
+                  <p class="menu-item__desc">Sweet, spicy, and tangy. Small $4 &middot; regular $8.</p>
                 </div>
-                <p class="menu-item__cn" lang="zh">招牌泡菜</p>
-                <p class="menu-item__desc">Sweet, spicy, and tangy. Small $4 &middot; regular $8.</p>
               </article>
               <article class="menu-item" data-menu-item data-id="A02" data-tags="chef">
                 <div class="menu-item__header">
@@ -555,14 +605,19 @@
                 <p class="menu-item__cn" lang="zh">炸鸡翅</p>
                 <p class="menu-item__desc">Crispy and savory with aromatic bay leaf.</p>
               </article>
-              <article class="menu-item" data-menu-item data-id="A16" data-tags="">
-                <div class="menu-item__header">
-                  <h3 class="menu-item__name"><span class="menu-item__code">A16</span>Shichimi Fried Tofu</h3>
-                  <span class="menu-item__leader" aria-hidden="true"></span>
-                  <span class="menu-item__price">$12</span>
+              <article class="menu-item menu-item--photo" data-menu-item data-id="A16" data-tags="">
+                <button type="button" class="menu-item__photo media" data-lightbox="images/food/fried-tofu.jpg" aria-label="View photo: Shichimi fried tofu with dipping sauces">
+                  <img src="images/food/fried-tofu-sm.jpg" alt="Shichimi fried tofu with dipping sauces" loading="lazy" decoding="async" />
+                </button>
+                <div class="menu-item__body">
+                  <div class="menu-item__header">
+                    <h3 class="menu-item__name"><span class="menu-item__code">A16</span>Shichimi Fried Tofu</h3>
+                    <span class="menu-item__leader" aria-hidden="true"></span>
+                    <span class="menu-item__price">$12</span>
+                  </div>
+                  <p class="menu-item__cn" lang="zh">炸玉子豆腐</p>
+                  <p class="menu-item__desc">Silken center with a kick.</p>
                 </div>
-                <p class="menu-item__cn" lang="zh">炸玉子豆腐</p>
-                <p class="menu-item__desc">Silken center with a kick.</p>
               </article>
               <article class="menu-item" data-menu-item data-id="A17" data-tags="">
                 <div class="menu-item__header">
@@ -720,14 +775,19 @@
               <span class="menu-section__cn" lang="zh">甜品类</span>
             </header>
             <div class="menu-list">
-              <article class="menu-item" data-menu-item data-id="D01" data-tags="chef">
-                <div class="menu-item__header">
-                  <h3 class="menu-item__name"><span class="menu-item__code">D01</span>House Yogurt Pudding<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
-                  <span class="menu-item__leader" aria-hidden="true"></span>
-                  <span class="menu-item__price">$7</span>
+              <article class="menu-item menu-item--photo" data-menu-item data-id="D01" data-tags="chef">
+                <button type="button" class="menu-item__photo media" data-lightbox="images/food/yogurt-pudding.jpg" aria-label="View photo: House yogurt pudding with crunchy topping">
+                  <img src="images/food/yogurt-pudding-sm.jpg" alt="House yogurt pudding with crunchy topping" loading="lazy" decoding="async" />
+                </button>
+                <div class="menu-item__body">
+                  <div class="menu-item__header">
+                    <h3 class="menu-item__name"><span class="menu-item__code">D01</span>House Yogurt Pudding<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
+                    <span class="menu-item__leader" aria-hidden="true"></span>
+                    <span class="menu-item__price">$7</span>
+                  </div>
+                  <p class="menu-item__cn" lang="zh">亚洲风味自制酸奶</p>
+                  <p class="menu-item__desc">Add mango &amp; blueberry jam +$1.</p>
                 </div>
-                <p class="menu-item__cn" lang="zh">亚洲风味自制酸奶</p>
-                <p class="menu-item__desc">Add mango &amp; blueberry jam +$1.</p>
               </article>
               <article class="menu-item" data-menu-item data-id="D02" data-tags="">
                 <div class="menu-item__header">
