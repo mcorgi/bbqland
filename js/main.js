@@ -9,6 +9,8 @@
    Soft-opening hours (October 2026). These may change at the
    Oct 21 grand opening. `confirmed: true` turns on the live
    Open/Closed badge; set it to false if the hours are in doubt.
+   When hours change, also update openingHoursSpecification in the
+   structured data in index.html (that's what Google reads).
    ───────────────────────────────────────────────────────────── */
 const HOURS = {
   confirmed: true,

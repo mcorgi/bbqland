@@ -33,6 +33,7 @@ that still need input; they're hidden on the live site.
 - **Hours may change at the grand opening.** Edit the `HOURS` block at the top of `js/main.js`.
   Current soft-opening hours: Mon–Thu 4–9 PM, Fri 4–10 PM, Sat–Sun 11:30 AM–10 PM.
   The live "Open now / Closed" badge is on (`confirmed: true`); set it to false if the hours are in doubt.
+  Also update `openingHoursSpecification` in the structured data in `index.html` (Google reads that copy).
 - **Distributor.** On `about.html`, fill in the `[Distributor name]` card and
   remove its `dev-only` class.
 - **Set contents.** Meat Lover / Chef's Selection descriptions are general,
@@ -74,3 +75,12 @@ bbqland/
 
 Upload the folder as-is to Netlify, Vercel, GitHub Pages, or any static host.
 `images/_originals/` isn't used by the site and can be left out of the upload.
+
+## Search (Google)
+
+- The official address is `https://www.bbqlandma.com`. Every page has a canonical tag and
+  `og:url` pointing there, so Google treats the `.vercel.app` copy as a duplicate.
+- `sitemap.xml` lists the six pages; `robots.txt` points to it. Add a page → add it to both
+  the sitemap and give it a canonical tag. Bump `<lastmod>` when content changes a lot.
+- `index.html` has Restaurant structured data (name, "BBQLand" alias, address, phone,
+  hours, menu). Keep the hours in sync with `HOURS` in `js/main.js`.
