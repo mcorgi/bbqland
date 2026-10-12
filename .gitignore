@@ -2,3 +2,9 @@ images/_originals/
 .vercel
 .DS_Store
 Thumbs.db
+
+# Owner reference files and raw photos (large; not part of the site)
+BBQ Land Website.html
+photos for website/
+*.pdf
+!menus/*.pdf

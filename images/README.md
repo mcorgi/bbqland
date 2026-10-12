@@ -1,54 +1,35 @@
 # Images
 
-The site uses web-optimized copies of the photos. Each photo has a full-size
-version (`name.jpg`, ~2048px) and a phone-size version (`name-sm.jpg`, ~900px).
-The original phone photos are kept untouched in `_originals/`.
+Web-optimized copies of the owner's photos (from the shared Drive folder).
+Full size is `photos/name.jpg` (max 2200px); `name-sm.jpg` is the ~960px
+version used on phones and for small tiles. Some photos only ship the `-sm`
+size because they're only shown small.
 
-| File                         | Shows                                  | Used on                                  |
-|------------------------------|----------------------------------------|------------------------------------------|
-| `exterior/storefront`        | The storefront & sign                  | Home hero, Visit card, Contact hero      |
-| `interior/interior-1`        | Booth seating                          | The Room, About story, gallery           |
-| `interior/interior-2`        | Long view of the dining room           | "Step inside", The Room, About hero      |
-| `interior/interior-3`        | Window counter / bar seating           | The Room, Drinks hero, gallery           |
-| `food/food-1`                | Marbled wagyu on a lava stone          | Favorites, Chef's Selection set, gallery |
-| `food/food-2`                | Cuts on the brass grill                | Menu grill banner, gallery               |
-| `food/food-3`                | Prime cuts, kabocha, lettuce wraps     | Favorites, Meat Lover set, gallery       |
-| `food/food-4`                | Naengmyeon                             | Favorites, Kitchen banner, gallery       |
-| `interior/interior-bar`      | The long bar counter                   | Gallery                                  |
-| `interior/interior-window`   | Window table with BBQ LAND planters    | Gallery                                  |
-| `interior/interior-counter`  | Lucky cats & orchids on the counter    | Gallery                                  |
-| `interior/interior-jade`     | Jade guardian statues                  | Gallery                                  |
-| `food/kimchi`                | Signature kimchi                       | Home "little things", Menu A01           |
-| `food/sauces`                | Dipping sauces & seasonings card       | Home "little things", Menu sauces        |
-| `food/yogurt-pudding`        | House yogurt pudding                   | Home "little things", Menu D01           |
-| `food/mango-yogurt`          | Mango coconut yogurt shake             | Home "little things", Drinks Y17         |
-| `food/fried-tofu`            | Shichimi fried tofu                    | Menu A16                                 |
-| `food/short-rib`             | Marinated prime kalbi on a bamboo leaf | Home favorites (B05), Menu B05, gallery  |
-| `food/grill-steak`           | Steak searing on the brass grill (wide crop) | Menu hero                          |
-| `food/wagyu-stone`           | Wagyu on a lava stone, white pebbles   | Gallery                                  |
-| `food/soba`                  | Noodles with pickled ginger            | Gallery                                  |
-| `menu/menu-main`             | Photo of the printed menu (rotated upright, 2800px so text stays legible) | Menu "Printed Menu" |
-| `menu/menu-sets`             | Photo of the printed signature sets page | Menu "Printed Menu"                    |
-| `menu-board.jpg`             | The printed menu in the window         | Reference only (slogan, about text, chef's picks) |
-| `brush.svg`                  | Ink brush stroke behind the slogan     | Hero, About page                         |
+Re-export from originals with ImageMagick:
 
-## logo/
+```bash
+magick original.HEIC -auto-orient -colorspace sRGB -resize '2200x2200>' -strip -quality 80 -interlace Plane photos/name.jpg
+magick photos/name.jpg -resize '960x960>' -quality 78 photos/name-sm.jpg
+```
 
-Cut out of the business-card photo, with transparent backgrounds.
+| File              | Shows                                         | Used on                               |
+|-------------------|-----------------------------------------------|---------------------------------------|
+| `beef-stone`      | Sliced beef on volcanic stone, lime           | About banner, social share image      |
+| `a5-wagyu`        | Marbled wagyu on stone                        | Home "Premium beef"                   |
+| `beef-tongue`     | Thick-cut beef tongue on stone                | About "Our Standard", Home Instagram  |
+| `grill-steak`     | Steak on the brass-ringed grill               | Home "Our Standard", About motto, Menu|
+| `grill-enoki`     | Brisket-wrapped enoki on the grill            | Closing banners, Home Instagram       |
+| `brisket-enoki`   | B11 brisket-wrapped enoki, plated             | About story, Menu                     |
+| `set-spread`      | Top-down signature set around the grill       | Home sets, Menu sets                  |
+| `pork-jowl`       | P03 Berkshire pork jowl                       | Menu                                  |
+| `mashed-potato`, `beef-tartare`, `fried-tofu`, `kimchi`, `pork-belly` | Kitchen dishes | Menu, Home Instagram |
+| `sauces`          | Dipping sauce & seasoning guide (graphic)     | Menu "For the grill"                  |
+| `dining-room`, `booths`, `aisle`, `bar`, `booth-sunset`, `window-counter`, `life-is-good` | Interior | "The Room" galleries |
+| `storefront`      | Storefront & sign                             | Reservations                          |
 
-| File                  | Use                                           |
-|-----------------------|-----------------------------------------------|
-| `seal.png`            | The red 烤場 seal (nav, ticker, footer, etc.)  |
-| `wordmark-white.png`  | "BBQ LAND / Asian Grill & Barbecue" for dark backgrounds |
-| `wordmark-black.png`  | Same, for light backgrounds                   |
-| `favicon.png`         | Browser tab icon                              |
+Logos in `logo/` (`seal-v2.png`, `wordmark-v2-black.png`, `wordmark-v2-white.png`)
+were cut from the clean logo artwork in the owner's reference page.
 
-If the restaurant can send the original logo file (AI, SVG, or a high-res
-PNG), swap these out. Crisper edges, same filenames.
-
-## Adding or replacing photos
-
-To replace a photo, save it over the existing file **and** its `-sm` version
-with the same names. Keep each full-size file under ~600 KB (export about
-2000px wide, 80% quality). Food photos are welcome: the gallery, favorites,
-and set cards will all look better with more real dishes.
+The hero video (`/media/hero-*.mp4`) is the two grilling clips (IMG_2135 then
+IMG_2022) joined with a crossfade, silent. `hero-wide` is a 4:3 center crop for
+desktop; `hero-tall` is the full vertical clip for phones.

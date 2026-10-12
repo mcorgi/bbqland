@@ -5,14 +5,15 @@ Website for **BBQ Land, Asian Grill & Barbecue**: modern Asian yakiniku at
 
 ## Pages
 
-| Page       | File            | What's there |
-|------------|-----------------|--------------|
-| Home       | `index.html`    | Storefront hero, manifesto, philosophy, Savenor's, sets, favorites, gallery, visit, careers |
-| About      | `about.html`    | Story, motto, philosophy, Savenor's summary, timeline, feedback |
-| Savenor's  | `savenors.html` | Dedicated page on our butcher: history, Julia Child, why it matters, beef highlights |
-| Menu       | `menu.html`     | Full Toast menu with chef's picks / vegetarian filters and search |
-| Drinks     | `drinks.html`   | Non-alcoholic drinks; bar "coming soon" (no liquor license yet) |
-| Visit      | `contact.html`  | Call / reserve / order / directions, hours, map |
+| Page         | File                | What's there |
+|--------------|---------------------|--------------|
+| Home         | `index.html`        | Grilling-video hero, visit & hours bar, the menu, signature sets, our standard, inside BBQ Land, Instagram, closing banner |
+| Menu         | `menu.html`         | Printed dinner/lunch menus as images (+ PDF downloads), then every dish as text linking to its Toast item page: lunch, grill, kitchen, sets, drinks & dessert |
+| Reservations | `reservations.html` | Reserve online (Toast) or by phone, order for pickup, live hours, directions, map |
+| About        | `about.html`        | Story, motto, philosophy, our standard (brief Savenor's mention), the room |
+
+`contact.html`, `drinks.html` and `savenors.html` are redirects to the pages
+above, so old links and Google results keep working.
 
 ## Running locally
 
@@ -21,66 +22,44 @@ python -m http.server 8080
 # then open http://localhost:8080
 ```
 
-Opening the HTML file directly mostly works, but the brush-stroke mask needs a
-server. On `localhost` you'll also see orange **DEV NOTE** boxes for things
-that still need input; they're hidden on the live site.
+## Editing
 
-## Before going live
-
-- **Grand opening: Wednesday, Oct 21, 2026.** The red banner and the line under
-  the hero count down automatically, then switch to "Grand opening today!" and
-  "Now open". The date is `GRAND_OPENING` in `js/main.js`.
-- **Hours may change at the grand opening.** Edit the `HOURS` block at the top of `js/main.js`.
-  Current soft-opening hours: Mon–Thu 4–9 PM, Fri 4–10 PM, Sat–Sun 11:30 AM–10 PM.
-  The live "Open now / Closed" badge is on (`confirmed: true`); set it to false if the hours are in doubt.
-  Also update `openingHoursSpecification` in the structured data in `index.html` (Google reads that copy).
-- **Distributor.** On `about.html`, fill in the `[Distributor name]` card and
-  remove its `dev-only` class.
-- **Set contents.** Meat Lover / Chef's Selection descriptions are general,
-  because what's in each set isn't published yet.
-- **Logo.** Currently cut from a photo of the business card. Swap in the
-  original artwork if available (see `images/README.md`).
-
-## Editing content
-
-Menu content lives in `menu.html` and `drinks.html`. Hours live only in
-`js/main.js`. Links (Toast order/reserve, phone, Facebook, Indeed) are plain
-`href`s in each page.
-
-All ordering goes straight to Toast. Toast doesn't let outside websites
-pre-fill a cart, so the site links to the Toast menu rather than keeping its
-own cart.
-
-## Interactive bits
-
-- Embers rising over the storefront hero
-- Manifesto that lights up word by word as you read
-- Party-size toggle on sets (with per-person price), hover-to-preview favorites
-- 3D tilt cards, magnetic buttons, count-up numbers
-- Menu: sticky section tabs, chef's-pick / vegetarian filters, live search
-- Photo lightbox (keyboard + swipe)
-- Everything respects `prefers-reduced-motion`
+- **Phone:** (508) 719-8105, in every page's header, footer and mobile call bar.
+  Search for `5087198105` to find them all.
+- **Hours** live in `HOURS` at the top of `js/main.js` (drives every hours table
+  and the "Open now" line). Also update the static fallback tables in the HTML
+  and `openingHoursSpecification` in `index.html` (that's what Google reads).
+- **Grand opening** date is `GRAND_OPENING` in `js/main.js`. The hero shows
+  "Soft opening now · Grand opening …", then "Grand opening today", then hides.
+- **Menu** content is in `menu.html`. Each dish links to its own Toast item
+  page; if an item is rebuilt in Toast its link changes. When the printed menu
+  changes, replace the PDFs in `menus/` and re-export the images in
+  `images/menus/` (e.g. `pdftoppm -r 220 -png menu.pdf out`, then resize).
+- **The hours bar** under the home hero has the hours typed in directly; update
+  it along with `HOURS`.
+- **Instagram:** https://www.instagram.com/bbq_land_shrewsbury/
 
 ## File structure
 
 ```
 bbqland/
-├── index.html, about.html, savenors.html, menu.html, drinks.html, contact.html
+├── index.html, menu.html, reservations.html, about.html
+├── contact.html, drinks.html, savenors.html   # redirects
 ├── css/styles.css
-├── js/main.js        # all interactions + HOURS
-└── images/           # see images/README.md
+├── js/main.js        # hours, header, mobile menu, hero video, menu tabs
+├── images/           # see images/README.md
+├── media/            # hero video (wide + tall) and poster frames
+└── menus/            # printed dinner & lunch menus (PDF)
 ```
 
 ## Deploying
 
-Upload the folder as-is to Netlify, Vercel, GitHub Pages, or any static host.
-`images/_originals/` isn't used by the site and can be left out of the upload.
+Upload the folder as-is to any static host (currently Vercel).
+**Don't deploy until the owner has approved the redesign.**
 
 ## Search (Google)
 
-- The official address is `https://www.bbqlandma.com`. Every page has a canonical tag and
-  `og:url` pointing there, so Google treats the `.vercel.app` copy as a duplicate.
-- `sitemap.xml` lists the six pages; `robots.txt` points to it. Add a page → add it to both
-  the sitemap and give it a canonical tag. Bump `<lastmod>` when content changes a lot.
-- `index.html` has Restaurant structured data (name, "BBQLand" alias, address, phone,
-  hours, menu). Keep the hours in sync with `HOURS` in `js/main.js`.
+- The official address is `https://www.bbqlandma.com`. Every page has a canonical tag.
+- `sitemap.xml` lists the four pages; `robots.txt` points to it.
+- `index.html` has Restaurant structured data (name, address, phone, hours,
+  menu, Instagram). Keep the hours in sync with `HOURS` in `js/main.js`.
