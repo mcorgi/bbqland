@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | BBQ Land, Shrewsbury MA</title>
+    <meta name="description" content="The full BBQ Land menu: A5 wagyu, prime beef, Berkshire pork, lamb, seafood, appetizers, rice and noodles, stone pot soups, and desserts. Chef's picks and vegetarian options marked." />
+    <meta name="theme-color" content="#d62328" />
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:site_name" content="BBQ Land" />
+    <meta property="og:title" content="Menu | BBQ Land, Shrewsbury MA" />
+    <meta property="og:description" content="The full BBQ Land menu: A5 wagyu, prime beef, Berkshire pork, lamb, seafood, appetizers, rice and noodles, stone pot soups, and desserts. Chef's picks and vegetarian options marked." />
+    <meta property="og:image" content="images/food/food-2.jpg" />
+    <link rel="icon" type="image/png" href="images/logo/favicon.png" />
+    <link rel="apple-touch-icon" href="images/logo/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Jost:wght@400;500&family=Oswald:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400&display=swap&text=火と旨味の、出会い" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>document.documentElement.classList.add('js');</script>
+  </head>
+  <body>
+    <div class="soft-opening" role="note">
+      <span class="soft-opening__dot" aria-hidden="true"></span>
+      <span data-banner>Now in soft opening<span class="soft-opening__extra"> &middot; Grand opening Wednesday, October 21</span></span>
+    </div>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <div class="nav__inner">
+        <a href="index.html" class="logo" aria-label="BBQ Land home">
+          <img class="logo__seal" src="images/logo/seal.png" alt="" width="46" height="43" />
+          <img class="logo__word" src="images/logo/wordmark-white.png" alt="BBQ Land, Asian Grill &amp; Barbecue" width="100" height="38" />
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav__links" id="navLinks">
+          <a href="about.html">About</a>
+          <a href="menu.html" class="active" aria-current="page">Menu</a>
+          <a href="drinks.html">Drinks</a>
+          <a href="contact.html">Visit</a>
+          <a href="https://toast.app/r/bbq-land-31-boston-turnpike" class="btn" target="_blank" rel="noopener">Reserve</a>
+          <a href="https://toast.app/r/bbq-land-31-boston-turnpike/order" class="btn btn--red" target="_blank" rel="noopener">Order Online</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+    <header class="page-hero">
+      <div class="page-hero__bg"><img src="images/food/food-2.jpg" srcset="images/food/food-2-sm.jpg 900w, images/food/food-2.jpg 2048w" sizes="100vw" alt="" fetchpriority="high" /></div>
+      <div class="container">
+        <p class="section-label" data-enter="1">Menu</p>
+        <h1 class="page-hero__title" data-enter="2">Fire up <em>the grill.</em></h1>
+        <p class="page-hero__subtitle" data-enter="3">
+          Everything is &agrave; la carte. Chef&rsquo;s picks and vegetarian dishes are marked. Order for pickup on Toast.
+        </p>
+        <div class="btn-group" data-enter="4">
+          <a href="https://toast.app/r/bbq-land-31-boston-turnpike/order" class="btn btn--red" target="_blank" rel="noopener">Order Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="drinks.html" class="btn">Drinks</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu-tools">
+      <div class="container menu-tools__inner">
+        <nav class="menu-tabs" aria-label="Menu sections">
+          <a href="#sets">Sets</a><a href="#beef">Beef</a><a href="#pork">Pork</a><a href="#lamb">Lamb</a><a href="#poultry">Poultry</a><a href="#seafood">Seafood</a><a href="#veg">Veggies</a><a href="#grill-addons">Add-ons</a><a href="#appetizers">Appetizers</a><a href="#fried">Fried</a><a href="#rice-noodles">Rice &amp; Noodles</a><a href="#soup">Soup</a><a href="#dessert">Dessert</a>
+        </nav>
+        <div class="menu-filters" role="group" aria-label="Filter">
+          <button type="button" class="chip" data-filter="chef" aria-pressed="false">Chef&rsquo;s picks</button>
+          <button type="button" class="chip" data-filter="veg" aria-pressed="false">Vegetarian</button>
+        </div>
+        <label class="menu-search">
+          <span class="sr-only">Search the menu</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="menuSearch" type="search" placeholder="Search: wagyu, spicy&hellip;" autocomplete="off" />
+        </label>
+      </div>
+    </div>
+
+    <section class="section alt" style="padding-top: 64px">
+      <div class="container">
+        <div class="menu-legend reveal">
+          <span><span class="badge badge--chef"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg></span>&nbsp;Chef&rsquo;s recommendation</span>
+          <span><span class="badge badge--veg"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l8-8"/></svg></span>&nbsp;Vegetarian</span>
+          <span>Prices may change during our soft opening.</span>
+        </div>
+
+        <div data-menu-group id="sets">
+          <div class="menu-section__head" style="margin-bottom: 20px"><h2 class="menu-section__title">Sets</h2><span class="menu-section__cn" lang="zh">套餐</span></div>
+          <p class="menu-section__note" style="margin: -8px 0 18px">Shareable spreads of cuts for the grill. Rice not included.</p>
+          <div class="menu-sets reveal" style="margin-bottom: 90px">
+            <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 2</span><h3>Meat Lover</h3><strong>$90</strong></a>
+            <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 2</span><h3>Chef&rsquo;s Selection</h3><strong>$80</strong></a>
+            <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 4</span><h3>Meat Lover</h3><strong>$198</strong></a>
+            <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 4</span><h3>Chef&rsquo;s Selection</h3><strong>$168</strong></a>
+          </div>
+        </div>
+
+        <div data-menu-group>
+          <div class="media menu-banner reveal">
+            <img src="images/food/food-2.jpg" srcset="images/food/food-2-sm.jpg 900w, images/food/food-2.jpg 2048w" sizes="100vw" alt="" loading="lazy" decoding="async" />
+            <div class="menu-banner__text"><h2>For the Grill</h2><p>Cooked by you, at your table</p></div>
+          </div>
+          <div class="menu-columns">
+          <section class="menu-section menu-section--full reveal" id="beef" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Premium Beef</h2>
+              <span class="menu-section__cn" lang="zh">牛肉类</span>
+            </header>
+            <p class="menu-section__note">Prime and wagyu cuts, grilled at your table.</p>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="B01" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">B01</span>Japanese A5 Wagyu</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$48</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">A5日本和牛</p>
+                <p class="menu-item__desc">Whole-cut Japanese A5 wagyu with exceptional marbling, buttery richness, and melt-in-your-mouth tenderness.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="B02" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">B02</span>Prime Filet Mignon</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$26</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">菲力牛排</p>
+                <p class="menu-item__desc">Lean and tender with a buttery-soft bite.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="B03" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">B03</span>Prime Ribeye</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$26</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">霜降眼肉</p>
+                <p class="menu-item__desc">Expertly selected with abundant marbling and exceptional tenderness.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="B05" data-tags="chef">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">B05</span>Marinated Prime Kalbi<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$25</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">腌制牛仔骨</p>
+                <p class="menu-item__desc">Our signature marinade. Juicy, bone-in.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="B06" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">B06</span>Prime Kalbi</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$25</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">原味牛仔骨</p>
+                <p class="menu-item__desc">Richly marbled for exceptional tenderness, bone-in.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="B07" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">B07</span>Prime Chuck Short Rib</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$18</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">原味三角牛腩</p>
+                <p class="menu-item__desc">Beautifully marbled for rich, savory flavor and succulent juiciness.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="B08" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">B08</span>Boneless Short Rib</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$18</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">原味无骨牛小排</p>
+                <p class="menu-item__desc">Tender and richly marbled for a juicy bite.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="B09" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">B09</span>Lean Black Pepper Steak</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$16</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">黑椒牛排</p>
+                <p class="menu-item__desc">Juicy, flavorful steak with a robust, peppery finish.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="B10" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">B10</span>Marbled Black Pepper Brisket</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">黑椒肥牛</p>
+                <p class="menu-item__desc">Seasoned with aromatic black pepper for a bold, juicy bite.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="B11" data-tags="chef">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">B11</span>Brisket-Wrapped Enoki<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">肥牛金针菇</p>
+                <p class="menu-item__desc">Thin-sliced brisket around enoki mushrooms. Juicy, with a delicate, crisp finish.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="B12" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">B12</span>Prime Thick-Cut Beef Tongue</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$32</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">厚切牛舌</p>
+                <p class="menu-item__desc">Juicy and springy with a rich texture.</p>
+              </article>
+            </div>
+          </section>
+          <section class="menu-section reveal" id="pork" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Pork</h2>
+              <span class="menu-section__cn" lang="zh">猪肉类</span>
+            </header>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="P01" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">P01</span>Thick-Cut Berkshire Pork Belly</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">厚切黑猪五花肉</p>
+                <p class="menu-item__desc">Richly marbled for exceptional juiciness and buttery tenderness.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="P02" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">P02</span>Kimchi Pork Belly</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">泡菜猪五花</p>
+                <p class="menu-item__desc">Tender pork belly and kimchi. Rich and juicy with a bright, tangy finish.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="P03" data-tags="chef">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">P03</span>Berkshire Pork Jowl<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$15</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">黑猪松板肉</p>
+                <p class="menu-item__desc">Delicately marbled for juicy tenderness and a pleasantly crisp bite.</p>
+              </article>
+            </div>
+          </section>
+          <section class="menu-section reveal" id="lamb" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Lamb</h2>
+              <span class="menu-section__cn" lang="zh">羊肉类</span>
+            </header>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="L01" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">L01</span>Lamb Chops (2 pcs)</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$20</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">羊排</p>
+                <p class="menu-item__desc">American premium lamb. Rich, juicy, and tender with bold, savory flavor.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="L02" data-tags="chef">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">L02</span>Marinated Lamb Ribs<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$18</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">腌制带骨羊肋条</p>
+                <p class="menu-item__desc">Tender lamb ribs with rich, savory flavor and a succulent bite.</p>
+              </article>
+            </div>
+          </section>
+          <section class="menu-section reveal" id="poultry" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Poultry</h2>
+              <span class="menu-section__cn" lang="zh">鸡肉类</span>
+            </header>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="C01" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">C01</span>Spicy Chicken Thigh</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">奥尔良鸡腿肉</p>
+                <p class="menu-item__desc">Marinated boneless chicken thigh with a touch of spice.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="C02" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">C02</span>Marinated Chicken Thigh</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">风味鸡腿肉</p>
+                <p class="menu-item__desc">Aromatic, with a char-grilled flavor.</p>
+              </article>
+            </div>
+          </section>
+          <section class="menu-section reveal" id="seafood" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Seafood</h2>
+              <span class="menu-section__cn" lang="zh">海鲜类</span>
+            </header>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="S01" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">S01</span>Shrimp</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$8</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">虾</p>
+                <p class="menu-item__desc">Plump and succulent.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="S02" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">S02</span>Buttered Scallop in the Shell (1 pc)</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$10</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">带壳带子</p>
+                <p class="menu-item__desc">Grilled in its shell with butter.</p>
+              </article>
+            </div>
+          </section>
+          <section class="menu-section reveal" id="veg" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Vegetables</h2>
+              <span class="menu-section__cn" lang="zh">蔬菜类</span>
+            </header>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="V01" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">V01</span>Zucchini</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$5</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">角瓜</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="V02" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">V02</span>Broccoli</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$8</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">西兰花</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="V03" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">V03</span>Asparagus</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$8</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">芦笋</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="V05" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">V05</span>Potato &amp; Sweet Potato Platter</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$8</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">土豆红薯拼</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="V06" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">V06</span>King Oyster Mushroom</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$8</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">杏鲍菇</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="V07" data-tags="veg">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">V07</span>Vegetable Assortment<span class="badge badge--veg" title="Vegetarian"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l8-8"/></svg><span class="sr-only">Vegetarian</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$14</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">蔬菜拼盘</p>
+                <p class="menu-item__desc">Lettuce, peppers, sliced garlic, carrot.</p>
+              </article>
+            </div>
+          </section>
+          <section class="menu-section reveal" id="grill-addons" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Grill Add-Ons</h2>
+              <span class="menu-section__cn" lang="zh">另点</span>
+            </header>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="V08" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">V08</span>Real Wasabi</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$2</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">山葵</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="V09" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">V09</span>Pineapple Slice</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$2</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">菠萝片</p>
+                <p class="menu-item__desc">Grilled pineapple with meat: smoky, sweet, and tangy.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="V10" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">V10</span>Nori Wraps</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$2</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">海苔包</p>
+              </article>
+            </div>
+          </section>
+          </div>
+        </div>
+
+        <div data-menu-group>
+          <div class="media menu-banner reveal">
+            <img src="images/food/food-4.jpg" srcset="images/food/food-4-sm.jpg 900w, images/food/food-4.jpg 2048w" sizes="100vw" alt="" loading="lazy" decoding="async" />
+            <div class="menu-banner__text"><h2>From the Kitchen</h2><p>Small plates, rice, noodles &amp; more</p></div>
+          </div>
+          <div class="menu-columns">
+          <section class="menu-section menu-section--full reveal" id="appetizers" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Appetizers</h2>
+              <span class="menu-section__cn" lang="zh">开胃菜</span>
+            </header>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="A01" data-tags="chef veg">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A01</span>Signature Kimchi<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span><span class="badge badge--veg" title="Vegetarian"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l8-8"/></svg><span class="sr-only">Vegetarian</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$4</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">招牌泡菜</p>
+                <p class="menu-item__desc">Sweet, spicy, and tangy. Small $4 &middot; regular $8.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A02" data-tags="chef">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A02</span>Gyeran-jjim<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$8</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">韩式火山鸡蛋糕</p>
+                <p class="menu-item__desc">Korean egg soufflé. Fluffy steamed egg custard with scallions and sesame oil.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A03" data-tags="chef">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A03</span>BBQ Land Mashed Potato<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">招牌土豆泥</p>
+                <p class="menu-item__desc">Classic flavors with a crunch.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A05" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A05</span>Beef Tartare</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$16</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">牛肉塔塔</p>
+                <p class="menu-item__desc">Classic, with a twist.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A06" data-tags="veg">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A06</span>House Salad<span class="badge badge--veg" title="Vegetarian"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l8-8"/></svg><span class="sr-only">Vegetarian</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$10</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">蔬菜沙拉</p>
+                <p class="menu-item__desc">Gem, red leaf, and romaine with arugula and little red radishes.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A07" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A07</span>Tako Wasabi</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$8</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">芥末章鱼</p>
+                <p class="menu-item__desc">Wasabi octopus. Chilled and sharp.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A08" data-tags="veg">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A08</span>Blistered Shishitos<span class="badge badge--veg" title="Vegetarian"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l8-8"/></svg><span class="sr-only">Vegetarian</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$7</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">日式唐辛子辣椒</p>
+                <p class="menu-item__desc">Smoky and mild.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A09" data-tags="veg">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A09</span>Edamame<span class="badge badge--veg" title="Vegetarian"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l8-8"/></svg><span class="sr-only">Vegetarian</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$5</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">日式盐水毛豆</p>
+                <p class="menu-item__desc">Classic, lightly salted.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A10" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A10</span>Crisp Kelp Salad</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$5</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">海带沙拉</p>
+                <p class="menu-item__desc">Briny and refreshing.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A11" data-tags="veg">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A11</span>Pickled Daikon<span class="badge badge--veg" title="Vegetarian"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l8-8"/></svg><span class="sr-only">Vegetarian</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$5</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">酸辣萝卜</p>
+                <p class="menu-item__desc">Tangy and crisp.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A12" data-tags="chef veg">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A12</span>Chilled Buckwheat Noodles<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span><span class="badge badge--veg" title="Vegetarian"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l8-8"/></svg><span class="sr-only">Vegetarian</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$5</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">全素冷面</p>
+                <p class="menu-item__desc">Chilled soba in a refreshing broth with crisp seasonal vegetables.</p>
+              </article>
+            </div>
+          </section>
+          <section class="menu-section reveal" id="fried" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Fried Bites</h2>
+              <span class="menu-section__cn" lang="zh">炸物</span>
+            </header>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="A13" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A13</span>BBQ Land Karaage</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">盐酥鸡</p>
+                <p class="menu-item__desc">Fried chicken with a savory crunch.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A15" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A15</span>Fried Chicken Wings (6 pcs)</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">炸鸡翅</p>
+                <p class="menu-item__desc">Crispy and savory with aromatic bay leaf.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A16" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A16</span>Shichimi Fried Tofu</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">炸玉子豆腐</p>
+                <p class="menu-item__desc">Silken center with a kick.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="A17" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">A17</span>Kuroshio Mackerel</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$8</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">烤青花鱼</p>
+                <p class="menu-item__desc">Bold and umami-rich.</p>
+              </article>
+            </div>
+          </section>
+          <section class="menu-section reveal" id="rice-noodles" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Rice &amp; Noodles</h2>
+              <span class="menu-section__cn" lang="zh">主食</span>
+            </header>
+            <p class="menu-section__note">Sets don&rsquo;t include rice. Add one of these.</p>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="F01" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">F01</span>Gyudon</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">牛Don</p>
+                <p class="menu-item__desc">Tender sliced beef and sweet onions simmered in sauce, over rice.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="F02" data-tags="chef">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">F02</span>Naengmyeon<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">韩国冷面</p>
+                <p class="menu-item__desc">Korean cold noodles. Chewy noodles in a chilled sweet-savory broth.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="F03" data-tags="chef">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">F03</span>Scallion Oil Soba<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">葱油拌面</p>
+                <p class="menu-item__desc">Buckwheat noodles tossed in fragrant, slow-rendered scallion oil.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="F05" data-tags="veg">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">F05</span>Garden Veggie Donburi<span class="badge badge--veg" title="Vegetarian"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l8-8"/></svg><span class="sr-only">Vegetarian</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$13</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">时蔬盖饭</p>
+                <p class="menu-item__desc">Assorted vegetable stir-fry over rice.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="F06" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">F06</span>Wagyu Fried Rice</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$15</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">和牛炒饭</p>
+                <p class="menu-item__desc">Wok-tossed rice with buttery, melt-in-your-mouth wagyu.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="F07" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">F07</span>Yakiniku Don</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$16</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">烤肉Don</p>
+                <p class="menu-item__desc">Grilled meat over rice with avocado and crab roe.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="F08" data-tags="chef">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">F08</span>Cheesy Beef Ishiyaki<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$16</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">起司石锅牛肉饭</p>
+                <p class="menu-item__desc">Sizzling stone-pot beef with melted cheese over rice.</p>
+              </article>
+            </div>
+          </section>
+          <section class="menu-section reveal" id="kitchen-addons" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Kitchen Add-Ons</h2>
+              <span class="menu-section__cn" lang="zh">另点</span>
+            </header>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="F09" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">F09</span>Soft-Boiled Egg</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$2</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">溏心蛋</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="F10" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">F10</span>Hard-Boiled Egg</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$2</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">全熟鸡蛋</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="F11" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">F11</span>Steamed Rice</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$2</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">米饭</p>
+              </article>
+            </div>
+          </section>
+          <section class="menu-section reveal" id="soup" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Stone Pot Soup</h2>
+              <span class="menu-section__cn" lang="zh">石锅汤</span>
+            </header>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="T01" data-tags="chef">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">T01</span>Soondubu Jjigae<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$7</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">石锅辣豆腐汤</p>
+                <p class="menu-item__desc">Spicy soft tofu stew. Spicy and comforting.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="T02" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">T02</span>Yukgaejang</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$8</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">石锅辣牛肉汤</p>
+                <p class="menu-item__desc">Spicy beef soup. Rich and fiery.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="T03" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">T03</span>Miso Soup</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$5</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">大酱汤</p>
+                <p class="menu-item__desc">Rich umami broth.</p>
+              </article>
+            </div>
+          </section>
+          <section class="menu-section reveal" id="dessert" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Desserts</h2>
+              <span class="menu-section__cn" lang="zh">甜品类</span>
+            </header>
+            <div class="menu-list">
+              <article class="menu-item" data-menu-item data-id="D01" data-tags="chef">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">D01</span>House Yogurt Pudding<span class="badge badge--chef" title="Chef&rsquo;s recommendation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a5 5 0 0 1 4.6 3A4 4 0 0 1 18 14v5H6v-5a4 4 0 0 1 1.4-8A5 5 0 0 1 12 3z"/></svg><span class="sr-only">Chef&rsquo;s recommendation</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$7</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">亚洲风味自制酸奶</p>
+                <p class="menu-item__desc">Add mango &amp; blueberry jam +$1.</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="D02" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">D02</span>Fluffy Peanut Shaved Ice</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$7</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">花生绵绵冰</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="D03" data-tags="">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">D03</span>Fluffy Mango Shaved Ice</h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$7</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">芒果绵绵冰</p>
+              </article>
+              <article class="menu-item" data-menu-item data-id="D05" data-tags="veg">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name"><span class="menu-item__code">D05</span>Sweet Red Bean with Mochi<span class="badge badge--veg" title="Vegetarian"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15zM5 19l8-8"/></svg><span class="sr-only">Vegetarian</span></span></h3>
+                  <span class="menu-item__leader" aria-hidden="true"></span>
+                  <span class="menu-item__price">$4</span>
+                </div>
+                <p class="menu-item__cn" lang="zh">红豆圆子羹</p>
+              </article>
+            </div>
+          </section>
+          </div>
+        </div>
+
+        <p class="menu-empty">Nothing on the menu matches that. Try &ldquo;beef&rdquo; or &ldquo;noodles.&rdquo;<span hidden></span></p>
+
+        <p class="menu-legal">
+          Before placing your order, please inform your server if a person in your party has a food allergy.
+          Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.
+        </p>
+      </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="footer__slogan slogan" aria-hidden="true">Where Fire Meets Flavor</span>
+        <div class="footer__grid">
+          <div>
+            <a href="index.html" class="logo footer__brand" aria-label="BBQ Land home">
+              <img class="logo__seal" src="images/logo/seal.png" alt="" loading="lazy" />
+              <img class="logo__word" src="images/logo/wordmark-white.png" alt="BBQ Land, Asian Grill &amp; Barbecue" loading="lazy" />
+            </a>
+            <p class="footer__tagline">
+              Modern Asian yakiniku in Shrewsbury. Premium cuts from Savenor&rsquo;s, grilled at your table.
+              <span class="jp" style="display:block;margin-top:10px;letter-spacing:.2em">火と旨味の、出会い</span>
+            </p>
+          </div>
+          <div class="footer__col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="savenors.html">Savenor&rsquo;s</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="drinks.html">Drinks</a></li>
+              <li><a href="index.html#gallery">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Dine</h4>
+            <ul>
+              <li><a href="https://toast.app/r/bbq-land-31-boston-turnpike" target="_blank" rel="noopener">Reservations</a></li>
+              <li><a href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener">Order Online</a></li>
+              <li><a href="savenors.html">Our Butcher</a></li>
+              <li><a href="https://www.indeed.com/viewjob?jk=acb88f000a2fbe77" target="_blank" rel="noopener">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Visit</h4>
+            <ul>
+              <li><a href="https://www.google.com/maps/dir/?api=1&destination=BBQ+Land,+31+Boston+Turnpike,+Shrewsbury,+MA+01545" target="_blank" rel="noopener">31 Boston Turnpike<br />Shrewsbury, MA 01545</a></li>
+              <li><a href="tel:+18573602177">(857) 360-2177</a></li>
+              <li><a href="contact.html">Hours &amp; Location</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>&copy; <span data-year>2026</span> BBQ Land &middot; Asian Grill &amp; Barbecue</span>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/61552071134878" target="_blank" rel="noopener" aria-label="BBQ Land on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="tel:+18573602177" aria-label="Call BBQ Land"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="mobile-bar" aria-label="Quick actions">
+      <a href="tel:+18573602177">Call</a>
+      <a href="https://toast.app/r/bbq-land-31-boston-turnpike" target="_blank" rel="noopener">Reserve</a>
+      <a href="https://toast.app/r/bbq-land-31-boston-turnpike/order" class="primary" target="_blank" rel="noopener">Order</a>
+    </nav>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
