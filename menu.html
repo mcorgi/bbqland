@@ -58,7 +58,6 @@
         <div class="btn-group" data-enter="4">
           <a href="https://toast.app/r/bbq-land-31-boston-turnpike/order" class="btn btn--red" target="_blank" rel="noopener">Order Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
           <a href="drinks.html" class="btn">Drinks</a>
-          <a href="#printed-menu" class="btn">See the Printed Menu</a>
         </div>
       </div>
     </header>
@@ -66,7 +65,7 @@
     <div class="menu-tools">
       <div class="container menu-tools__inner">
         <nav class="menu-tabs" aria-label="Menu sections">
-          <a href="#sets">Sets</a><a href="#beef">Beef</a><a href="#pork">Pork</a><a href="#lamb">Lamb</a><a href="#poultry">Poultry</a><a href="#seafood">Seafood</a><a href="#veg">Veggies</a><a href="#grill-addons">Add-ons</a><a href="#sauces">Sauces</a><a href="#appetizers">Appetizers</a><a href="#fried">Fried</a><a href="#rice-noodles">Rice &amp; Noodles</a><a href="#soup">Soup</a><a href="#dessert">Dessert</a>
+          <a href="#printed-menu">Printed Menu</a><a href="#sauces">Sauces</a><a href="#sets">Sets</a><a href="#beef">Beef</a><a href="#pork">Pork</a><a href="#lamb">Lamb</a><a href="#poultry">Poultry</a><a href="#seafood">Seafood</a><a href="#veg">Veggies</a><a href="#grill-addons">Add-ons</a><a href="#appetizers">Appetizers</a><a href="#fried">Fried</a><a href="#rice-noodles">Rice &amp; Noodles</a><a href="#soup">Soup</a><a href="#dessert">Dessert</a>
         </nav>
         <div class="menu-filters" role="group" aria-label="Filter">
           <button type="button" class="chip" data-filter="chef" aria-pressed="false">Chef&rsquo;s picks</button>
@@ -88,17 +87,6 @@
           <span>Prices may change during our soft opening.</span>
         </div>
 
-        <div data-menu-group id="sets">
-          <div class="menu-section__head" style="margin-bottom: 20px"><h2 class="menu-section__title">Sets</h2><span class="menu-section__cn" lang="zh">套餐</span></div>
-          <p class="menu-section__note" style="margin: -8px 0 18px">Shareable spreads of cuts for the grill. Rice not included.</p>
-          <div class="menu-sets reveal" style="margin-bottom: 90px">
-            <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 2</span><h3>Meat Lover</h3><strong>$90</strong></a>
-            <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 2</span><h3>Chef&rsquo;s Selection</h3><strong>$80</strong></a>
-            <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 4</span><h3>Meat Lover</h3><strong>$198</strong></a>
-            <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 4</span><h3>Chef&rsquo;s Selection</h3><strong>$168</strong></a>
-          </div>
-        </div>
-
         <div data-menu-group id="printed-menu" class="printed-menu">
           <div class="menu-section__head" style="margin-bottom: 20px"><h2 class="menu-section__title">The Printed Menu</h2><span class="menu-section__cn" lang="zh">菜单</span></div>
           <p class="menu-section__note" style="margin: -8px 0 18px">The same menu you&rsquo;ll find at the table. Tap a page to take a closer look.</p>
@@ -111,6 +99,51 @@
               <img src="images/menu/menu-sets-sm.jpg" alt="The printed signature sets menu: Meat Lover and Chef&rsquo;s Selection for 2 and for 4" loading="lazy" decoding="async" />
               <span class="media__cap">Signature Sets</span>
             </button>
+          </div>
+        </div>
+
+        <div data-menu-group>
+          <div class="menu-columns">
+          <section class="menu-section menu-section--full reveal" id="sauces" data-menu-section>
+            <header class="menu-section__head">
+              <h2 class="menu-section__title">Dipping Sauces &amp; Seasonings</h2>
+              <span class="menu-section__cn" lang="zh">蘸料</span>
+            </header>
+            <div class="sauces">
+              <button type="button" class="sauces__photo media" data-lightbox="images/food/sauces.jpg" aria-label="View photo: The dipping sauces and seasonings card">
+                <img src="images/food/sauces-sm.jpg" alt="The dipping sauces and seasonings card at the table" loading="lazy" decoding="async" />
+              </button>
+              <div class="menu-list">
+                <article class="menu-item" data-menu-item data-tags="">
+                  <h3 class="menu-item__name">Sweet Soy</h3>
+                  <p class="menu-item__desc">Sweet, savory, umami. A smooth, balanced soy dip that lets the meat lead. Try it with ribeye, filet mignon, beef tongue, or A5 wagyu.</p>
+                </article>
+                <article class="menu-item" data-menu-item data-tags="">
+                  <h3 class="menu-item__name">Fruit &amp; Ginger Sauce</h3>
+                  <p class="menu-item__desc">Fruity and aromatic, finished with subtle notes of red and white wine. Great with beef, pork, and marinated meats.</p>
+                </article>
+                <article class="menu-item" data-menu-item data-tags="">
+                  <h3 class="menu-item__name">Savory Chili Seasoning</h3>
+                  <p class="menu-item__desc">A dry blend of toasted soybeans, chili, cumin, and Sichuan peppercorn. Smoky, nutty, gently spicy. Made for pork belly, pork jowl, lamb, and short rib.</p>
+                </article>
+                <article class="menu-item" data-menu-item data-tags="">
+                  <h3 class="menu-item__name">Ssamjang</h3>
+                  <p class="menu-item__desc">Rich, savory, bold. Fermented soybean paste with a touch of chili heat, for richer cuts and lettuce wraps.</p>
+                </article>
+              </div>
+            </div>
+          </section>
+          </div>
+        </div>
+
+        <div data-menu-group id="sets">
+          <div class="menu-section__head" style="margin-bottom: 20px"><h2 class="menu-section__title">Sets</h2><span class="menu-section__cn" lang="zh">套餐</span></div>
+          <p class="menu-section__note" style="margin: -8px 0 18px">Shareable spreads of cuts for the grill. Rice not included.</p>
+          <div class="menu-sets reveal" style="margin-bottom: 90px">
+            <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 2</span><h3>Meat Lover</h3><strong>$90</strong></a>
+            <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 2</span><h3>Chef&rsquo;s Selection</h3><strong>$80</strong></a>
+            <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 4</span><h3>Meat Lover</h3><strong>$198</strong></a>
+            <a class="menu-set" href="https://toast.app/r/bbq-land-31-boston-turnpike/order" target="_blank" rel="noopener"><span>For 4</span><h3>Chef&rsquo;s Selection</h3><strong>$168</strong></a>
           </div>
         </div>
 
@@ -429,35 +462,6 @@
                 </div>
                 <p class="menu-item__cn" lang="zh">海苔包</p>
               </article>
-            </div>
-          </section>
-          <section class="menu-section menu-section--full reveal" id="sauces" data-menu-section>
-            <header class="menu-section__head">
-              <h2 class="menu-section__title">Dipping Sauces &amp; Seasonings</h2>
-              <span class="menu-section__cn" lang="zh">蘸料</span>
-            </header>
-            <div class="sauces">
-              <button type="button" class="sauces__photo media" data-lightbox="images/food/sauces.jpg" aria-label="View photo: The dipping sauces and seasonings card">
-                <img src="images/food/sauces-sm.jpg" alt="The dipping sauces and seasonings card at the table" loading="lazy" decoding="async" />
-              </button>
-              <div class="menu-list">
-                <article class="menu-item" data-menu-item data-tags="">
-                  <h3 class="menu-item__name">Sweet Soy</h3>
-                  <p class="menu-item__desc">Sweet, savory, umami. A smooth, balanced soy dip that lets the meat lead. Try it with ribeye, filet mignon, beef tongue, or A5 wagyu.</p>
-                </article>
-                <article class="menu-item" data-menu-item data-tags="">
-                  <h3 class="menu-item__name">Fruit &amp; Ginger Sauce</h3>
-                  <p class="menu-item__desc">Fruity and aromatic, finished with subtle notes of red and white wine. Great with beef, pork, and marinated meats.</p>
-                </article>
-                <article class="menu-item" data-menu-item data-tags="">
-                  <h3 class="menu-item__name">Savory Chili Seasoning</h3>
-                  <p class="menu-item__desc">A dry blend of toasted soybeans, chili, cumin, and Sichuan peppercorn. Smoky, nutty, gently spicy. Made for pork belly, pork jowl, lamb, and short rib.</p>
-                </article>
-                <article class="menu-item" data-menu-item data-tags="">
-                  <h3 class="menu-item__name">Ssamjang</h3>
-                  <p class="menu-item__desc">Rich, savory, bold. Fermented soybean paste with a touch of chili heat, for richer cuts and lettuce wraps.</p>
-                </article>
-              </div>
             </div>
           </section>
           </div>
