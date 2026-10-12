@@ -11,7 +11,7 @@ The original phone photos are kept untouched in `_originals/`.
 | `interior/interior-2`        | Long view of the dining room           | "Step inside", The Room, About hero      |
 | `interior/interior-3`        | Window counter / bar seating           | The Room, Drinks hero, gallery           |
 | `food/food-1`                | Marbled wagyu on a lava stone          | Favorites, Chef's Selection set, gallery |
-| `food/food-2`                | Cuts on the brass grill                | The Room, Menu hero + grill banner       |
+| `food/food-2`                | Cuts on the brass grill                | Menu grill banner, gallery               |
 | `food/food-3`                | Prime cuts, kabocha, lettuce wraps     | Favorites, Meat Lover set, gallery       |
 | `food/food-4`                | Naengmyeon                             | Favorites, Kitchen banner, gallery       |
 | `interior/interior-bar`      | The long bar counter                   | Gallery                                  |
@@ -23,7 +23,8 @@ The original phone photos are kept untouched in `_originals/`.
 | `food/yogurt-pudding`        | House yogurt pudding                   | Home "little things", Menu D01           |
 | `food/mango-yogurt`          | Mango coconut yogurt shake             | Home "little things", Drinks Y17         |
 | `food/fried-tofu`            | Shichimi fried tofu                    | Menu A16                                 |
-| `food/short-rib`             | Marbled short rib on a bamboo leaf     | Gallery                                  |
+| `food/short-rib`             | Marinated prime kalbi on a bamboo leaf | Home favorites (B05), Menu B05, gallery  |
+| `food/grill-steak`           | Steak searing on the brass grill (wide crop) | Menu hero                          |
 | `food/wagyu-stone`           | Wagyu on a lava stone, white pebbles   | Gallery                                  |
 | `food/soba`                  | Noodles with pickled ginger            | Gallery                                  |
 | `menu/menu-main`             | Photo of the printed menu (rotated upright, 2800px so text stays legible) | Menu "Printed Menu" |
