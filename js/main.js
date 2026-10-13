@@ -7,7 +7,7 @@
    Use null for a closed day.
 
    Soft-opening hours (October 2026). These may change at the
-   Oct 21 grand opening. `confirmed: true` turns on the live
+   Nov 16 grand opening. `confirmed: true` turns on the live
    Open/Closed line; set it to false if the hours are in doubt.
    When hours change, also update the static hours tables in the
    HTML (shown if JavaScript is off) and openingHoursSpecification
@@ -28,7 +28,7 @@ const HOURS = {
 };
 
 // Grand opening, Eastern time. The hero line updates itself, then disappears a week after.
-const GRAND_OPENING = '2026-10-21';
+const GRAND_OPENING = '2026-11-16';
 
 const DAY_SHORT = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const DAY_LONG = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -206,7 +206,7 @@ function initHours() {
   });
 }
 
-/* "Grand opening Wednesday, Oct 21" → "Grand opening today" → hidden */
+/* "Grand opening Monday, Nov 16" → "Grand opening today" → hidden */
 function initOpening() {
   const els = document.querySelectorAll('[data-opening]');
   if (!els.length) return;
