@@ -378,6 +378,8 @@ h1, h2, h3, h4 { margin: 0; font-weight: 500; }
 .printed__links { display: flex; flex-wrap: wrap; gap: 14px 32px; margin-top: 22px; }
 .menu-tools--order { border-top: 0; padding: 0 0 22px; }
 .order-hint { margin: 0; font-size: 15px; color: var(--ink-2); }
+.order-intro { flex: 1 1 32em; max-width: 46em; }
+.allergy-note { margin: 10px 0 0; font-size: 13px; line-height: 1.55; color: var(--stone); }
 
 .menu-nav {
   position: sticky; top: var(--header-h); z-index: 20;
