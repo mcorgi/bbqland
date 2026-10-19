@@ -168,6 +168,8 @@ h1, h2, h3, h4 { margin: 0; font-weight: 500; }
 .header--overlay:not(.is-scrolled) .brand__word--light { display: block; }
 .header--overlay:not(.is-scrolled) .btn--ghost { color: var(--paper); border-color: rgba(246, 242, 235, 0.55); }
 .header--overlay:not(.is-scrolled) .btn--ghost:hover { background: var(--paper); color: var(--ink); }
+.header--overlay:not(.is-scrolled) .btn--order { background: var(--paper); border-color: var(--paper); color: var(--ink); }
+.header--overlay:not(.is-scrolled) .btn--order:hover { background: var(--red); border-color: var(--red); color: var(--paper); }
 .header--overlay:not(.is-scrolled) .icon-link:hover { color: var(--brass-light); }
 
 /* Mobile drawer */
@@ -568,12 +570,13 @@ h1, h2, h3, h4 { margin: 0; font-weight: 500; }
   .brand__word { width: 112px; }
 
   .callbar {
-    display: grid; grid-template-columns: 1fr 1fr; position: fixed; inset: auto 0 0; z-index: 40;
+    display: grid; grid-template-columns: 1fr 1fr 1.4fr; position: fixed; inset: auto 0 0; z-index: 40;
     background: var(--ink); color: var(--paper); padding-bottom: env(safe-area-inset-bottom);
   }
-  .callbar a { display: flex; align-items: center; justify-content: center; gap: 10px; height: 60px; font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; }
+  .callbar a { display: flex; align-items: center; justify-content: center; gap: 10px; height: 60px; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; }
   .callbar a + a { border-left: 1px solid var(--line-dark); }
   .callbar a:first-child { background: var(--red); }
+  .callbar a:last-child { background: var(--paper); color: var(--ink); }
   .callbar svg { width: 15px; height: 15px; }
 
   .hero h1 em { padding-left: 0.4em; }

@@ -6,8 +6,8 @@
    the "Open now" line. Times are 24h "HH:MM", Eastern time.
    Use null for a closed day.
 
-   Soft-opening hours (October 2026). These may change at the
-   Nov 16 grand opening. `confirmed: true` turns on the live
+   Full hours from Oct 19, 2026 (lunch and dinner every day).
+   `confirmed: true` turns on the live
    Open/Closed line; set it to false if the hours are in doubt.
    When hours change, also update the static hours tables in the
    HTML (shown if JavaScript is off) and openingHoursSpecification
@@ -17,12 +17,12 @@ const HOURS = {
   confirmed: true,
   // Index 0 = Sunday (matches Date.getDay())
   days: [
-    ['11:30', '22:00'], // Sunday
-    ['16:00', '21:00'], // Monday
-    ['16:00', '21:00'], // Tuesday
-    ['16:00', '21:00'], // Wednesday
-    ['16:00', '21:00'], // Thursday
-    ['16:00', '22:00'], // Friday
+    ['11:30', '21:00'], // Sunday
+    ['11:30', '21:00'], // Monday
+    ['11:30', '21:00'], // Tuesday
+    ['11:30', '21:00'], // Wednesday
+    ['11:30', '21:00'], // Thursday
+    ['11:30', '22:00'], // Friday
     ['11:30', '22:00'], // Saturday
   ],
 };
