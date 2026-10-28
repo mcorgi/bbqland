@@ -1,0 +1,13 @@
+{
+  "name": "bbqland",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "sync": "node scripts/build.mjs --in-place",
+    "preview": "node scripts/build.mjs && python -m http.server 8080 -d dist"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

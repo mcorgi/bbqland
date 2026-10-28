@@ -2,17 +2,15 @@
    Where Fire Meets Flavor · 火と旨味の、出会い */
 
 /* ─────────────────────────────────────────────────────────────
-   HOURS — the single source of truth for every hours table and
-   the "Open now" line. Times are 24h "HH:MM", Eastern time.
-   Use null for a closed day.
+   HOURS — drives every hours table and the "Open now" line.
+   Times are 24h "HH:MM", Eastern time; null is a closed day.
+   `confirmed: true` turns on the live Open/Closed line.
 
-   Full hours from Oct 19, 2026 (lunch and dinner every day).
-   `confirmed: true` turns on the live
-   Open/Closed line; set it to false if the hours are in doubt.
-   When hours change, also update the static hours tables in the
-   HTML (shown if JavaScript is off) and openingHoursSpecification
-   in the structured data in index.html (that's what Google reads).
+   Generated from content/hours.json (editable at /admin) by
+   scripts/build.mjs, which also writes the static hours tables
+   and the structured data in index.html. Don't edit it here.
    ───────────────────────────────────────────────────────────── */
+/* cms:hours */
 const HOURS = {
   confirmed: true,
   // Index 0 = Sunday (matches Date.getDay())
@@ -29,6 +27,7 @@ const HOURS = {
 
 // Grand opening, Eastern time. The hero line updates itself, then disappears a week after.
 const GRAND_OPENING = '2026-11-16';
+/* /cms:hours */
 
 const DAY_SHORT = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const DAY_LONG = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -210,6 +209,10 @@ function initHours() {
 function initOpening() {
   const els = document.querySelectorAll('[data-opening]');
   if (!els.length) return;
+  if (!GRAND_OPENING) {
+    els.forEach(el => (el.hidden = true));
+    return;
+  }
   const today = easternNow().date;
   const daysUntil = Math.round((Date.parse(GRAND_OPENING + 'T12:00:00Z') - Date.parse(today + 'T12:00:00Z')) / 864e5);
   const label = new Date(GRAND_OPENING + 'T12:00:00Z').toLocaleDateString('en-US', {

@@ -1,0 +1,100 @@
+{
+  "intro": "Curated grill favorites and kitchen dishes, about 20% less than ordering individually.",
+  "sets": [
+    {
+      "name": "Meat Lover",
+      "size": "for 2",
+      "price": 90,
+      "grill": [
+        "Whole-Cut Prime Filet Mignon",
+        "Thin Sliced Brisket Wrapped Enoki",
+        "Boneless Short Rib",
+        "Lamb Chop",
+        "Spicy Chicken Thigh",
+        "Assorted Vegetables"
+      ],
+      "kitchen": [
+        "Salad for Two",
+        "Spicy Beef Soup",
+        "Signature Kimchi",
+        "Pickled Daikon",
+        "BBQLAND Karaage",
+        "Sweet Red Bean with Mochi Drops for Two"
+      ],
+      "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-meat-lover-for-2-people_6d58b1bb-cd62-4736-81f1-796aec444a28"
+    },
+    {
+      "name": "Chef's Selection",
+      "size": "for 2",
+      "price": 80,
+      "grill": [
+        "Whole-Cut Prime Filet Mignon",
+        "Shrimp",
+        "Marbled Black Pepper Beef Brisket",
+        "Thick-Cut Berkshire Pork Belly",
+        "Assorted Vegetables"
+      ],
+      "kitchen": [
+        "Salad for Two",
+        "Spicy Tofu Soup",
+        "Signature Kimchi",
+        "Edamame",
+        "Shichimi Fried Tofu",
+        "Chilled Buckwheat Noodles for Two",
+        "Sweet Red Bean with Mochi Drops for Two"
+      ],
+      "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-chefs-selection-for-2-people_4f6bcc3d-a61c-4136-b66a-71e8c3c99b65"
+    },
+    {
+      "name": "Meat Lover",
+      "size": "for 4",
+      "price": 198,
+      "grill": [
+        "Beef Tongue",
+        "Prime Kalbi",
+        "Whole-Cut Prime Ribeye",
+        "Boneless Short Rib",
+        "Prime Chuck Short Rib",
+        "Lean Black Pepper Steak",
+        "Berkshire Pork Jowl",
+        "Buttered Scallop in the Shell",
+        "Assorted Vegetables"
+      ],
+      "kitchen": [
+        "Salad for Four",
+        "Miso Soup",
+        "Signature Kimchi",
+        "Pickled Daikon",
+        "Korean Egg Soufflé",
+        "Fried Chicken Wings",
+        "Sweet Red Bean with Mochi Drops"
+      ],
+      "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-meat-lover-for-4-people_81c9679f-417b-4829-9ec0-a933c1d2e34f"
+    },
+    {
+      "name": "Chef's Selection",
+      "size": "for 4",
+      "price": 168,
+      "grill": [
+        "Whole-Cut Prime Ribeye",
+        "Shrimp",
+        "Marinated Prime Kalbi",
+        "Marbled Black Pepper Beef Brisket",
+        "Thick-Cut Berkshire Pork Belly",
+        "Flavor Marinated Chicken Thigh",
+        "Assorted Vegetables"
+      ],
+      "kitchen": [
+        "Salad for Four",
+        "Miso Soup",
+        "Signature Kimchi",
+        "Korean Egg Soufflé",
+        "BBQLAND Mashed Potato",
+        "Kuroshio Mackerel",
+        "Chilled Buckwheat Noodles for Four",
+        "Sweet Red Bean with Mochi Drops for Four"
+      ],
+      "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-chefs-selection-for-4-people_0ce564b4-3875-4d74-b3d0-32a29e5a75e2"
+    }
+  ]
+}

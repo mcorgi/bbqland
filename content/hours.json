@@ -1,0 +1,41 @@
+{
+  "showOpenNow": true,
+  "grandOpening": "2026-11-16",
+  "days": {
+    "monday": {
+      "closed": false,
+      "open": "11:30",
+      "close": "21:00"
+    },
+    "tuesday": {
+      "closed": false,
+      "open": "11:30",
+      "close": "21:00"
+    },
+    "wednesday": {
+      "closed": false,
+      "open": "11:30",
+      "close": "21:00"
+    },
+    "thursday": {
+      "closed": false,
+      "open": "11:30",
+      "close": "21:00"
+    },
+    "friday": {
+      "closed": false,
+      "open": "11:30",
+      "close": "22:00"
+    },
+    "saturday": {
+      "closed": false,
+      "open": "11:30",
+      "close": "22:00"
+    },
+    "sunday": {
+      "closed": false,
+      "open": "11:30",
+      "close": "21:00"
+    }
+  }
+}

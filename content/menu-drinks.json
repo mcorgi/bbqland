@@ -1,0 +1,213 @@
+{
+  "intro": "Fresh juices, yogurt shakes, hot teas and desserts. Beer, wine and soju are on the way once our liquor license comes through.",
+  "groups": [
+    {
+      "title": "Drinks",
+      "column": "left",
+      "items": [
+        {
+          "code": "Y01",
+          "name": "Coke",
+          "price": 2.5,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y01-coke_c038d864-3b5f-4366-925b-61b2192a9cdb"
+        },
+        {
+          "code": "Y02",
+          "name": "Diet Coke",
+          "price": 2.5,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y02-diet-coke_a39e2644-2ee6-46d9-b853-33da0293185a"
+        },
+        {
+          "code": "Y03",
+          "name": "Sprite",
+          "price": 2.5,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y03-sprite_ee4bb8f3-9330-4f41-a01b-49b60966b13d"
+        },
+        {
+          "code": "Y05",
+          "name": "Calpico Soda",
+          "price": 4,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y05-calipco-soda-_98320e8c-59f3-43a3-9c06-9dca6977f614"
+        },
+        {
+          "code": "Y06",
+          "name": "Ramune Soda",
+          "price": 4,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y06-ramune-soda_52986664-a615-4e0b-a345-52c36c935b7a"
+        },
+        {
+          "code": "Y07",
+          "name": "Hojicha (hot)",
+          "price": 4,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y07hojichahot_80e81b0a-049b-46cb-a6b9-759ae5874877"
+        },
+        {
+          "code": "Y08",
+          "name": "Chrysanthemum Tea with Goji Berry (hot)",
+          "price": 4,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y08-chrysanthemum-tea-with-goji-berryhot_0dc886eb-4242-45f7-9795-6aaa4f6dcb70"
+        },
+        {
+          "code": "Y09",
+          "name": "Plum Nectar",
+          "price": 4,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y09-plum-nectar_875fd207-5ac6-4185-a928-85e30f40aed2"
+        },
+        {
+          "code": "Y10",
+          "name": "Freshly Pressed Watermelon Juice",
+          "price": 7,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y10-freshly-pressed-watermelon-juice_0a96f0fc-8420-45db-87f2-31f89532e419"
+        },
+        {
+          "code": "Y11",
+          "name": "Freshly Squeezed Orange Juice",
+          "price": 7,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y11-freshly-squeezed-orange-juice_a5319c9e-09c3-4e3f-ac43-ac6cfe4f4c50"
+        },
+        {
+          "code": "Y12",
+          "name": "Fresh Mango Juice",
+          "price": 8,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y12-fresh-mango-juice_4601c425-de5a-42d1-92c1-526f561621ed"
+        }
+      ]
+    },
+    {
+      "title": "Yogurt Shakes",
+      "column": "left",
+      "items": [
+        {
+          "code": "Y13",
+          "name": "Whole Avocado",
+          "price": 9,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y13-whole-avocado-yogurt_e54860b5-91bf-407a-9231-14917de18e72"
+        },
+        {
+          "code": "Y15",
+          "name": "Green Grape",
+          "price": 7,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y15-green-grape-yogurt_545042e3-3f7e-4075-b875-c9c3be139ae6"
+        },
+        {
+          "code": "Y16",
+          "name": "Berries and Barley with Boba",
+          "price": 7,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y16-berries-and-barley-with-boba_20dd64a1-4426-4a59-a3e3-5740115ed598"
+        },
+        {
+          "code": "Y17",
+          "name": "Sliced Mango with Coconut",
+          "price": 7,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-y17-sliced-mango-with-coconut_ad2c2bae-aeb5-477d-9067-df01973d48c8"
+        }
+      ]
+    },
+    {
+      "title": "Desserts",
+      "column": "right",
+      "items": [
+        {
+          "code": "D01",
+          "name": "Specialty Yogurt Pudding",
+          "price": 7,
+          "priceNote": "",
+          "description": "Add fruit mango & blueberry jam +1.",
+          "chefsPick": true,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-specialty-yogurt-pudding_c7398002-f8e0-4ffe-805a-a60fd3a73add"
+        },
+        {
+          "code": "D02",
+          "name": "Fluffy Peanut Shaved Ice",
+          "price": 7,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-d02-fluffy-peanut-shaved-ice_42684fa1-30ad-46f5-8c12-049e509c1644"
+        },
+        {
+          "code": "D03",
+          "name": "Fluffy Mango Shaved Ice",
+          "price": 7,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": false,
+          "toastUrl": "https://order.toasttab.com/online/bbq-land-31-boston-turnpike/item-d03-fluffy-mango-shaved-ice_bdea0d66-e5c5-4fe9-8d7e-2e357b401db5"
+        },
+        {
+          "code": "D05",
+          "name": "Sweet Red Bean with Mochi Drops",
+          "price": 4,
+          "priceNote": "",
+          "description": "",
+          "chefsPick": false,
+          "vegetarian": true,
+          "toastUrl": ""
+        }
+      ]
+    }
+  ]
+}

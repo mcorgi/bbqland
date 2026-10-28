@@ -1,0 +1,49 @@
+{
+  "intro": "Soft-opening lunch specials. Choose a grill combo, or a complete soup or rice set with no grilling required.",
+  "combo": {
+    "badge": "Soft opening special",
+    "title": "Lunch grill combo",
+    "note": "Choose any two or three grill items. Rice, salad and soup included, with free refills.",
+    "prices": [
+      {
+        "label": "2 grill items",
+        "price": 22,
+        "was": 25
+      },
+      {
+        "label": "3 grill items",
+        "price": 30,
+        "was": 35
+      }
+    ],
+    "items": [
+      "Black Pepper Steak",
+      "Black Pepper Beef Brisket",
+      "Beef Rib Cubes",
+      "Savory Beef Tips",
+      "Herb-Marinated Chicken Thigh",
+      "Spicy Chicken Thigh",
+      "Kimchi Pork Belly",
+      "Sweet Soy Flavored Pork",
+      "Spicy Shrimp",
+      "Butter Garlic Shrimp"
+    ],
+    "footnote": "Prices are per person. Add-ons $2 each: Sweet Red Bean with Mochi Drop, Cheesy Sweet Potato."
+  },
+  "sets": [
+    {
+      "title": "Soup set",
+      "price": 16,
+      "was": 20,
+      "choices": "Spicy Tofu Stew, Spicy Beef Soup or Miso Soup",
+      "servedWith": "Served with rice, grilled mackerel, two cold dishes, steamed egg, fresh fruit and a drink (plum nectar, Coke or Sprite)."
+    },
+    {
+      "title": "Rice set",
+      "price": 20,
+      "was": 25,
+      "choices": "Beef Don, Yakiniku Don or Wagyu Fried Rice",
+      "servedWith": "Served with soup of the day, two cold dishes, steamed egg, fresh fruit and a drink (plum nectar, Coke or Sprite)."
+    }
+  ]
+}

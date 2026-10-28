@@ -8,3 +8,5 @@ BBQ Land Website.html
 photos for website/
 *.pdf
 !menus/*.pdf
+dist/
+node_modules/
