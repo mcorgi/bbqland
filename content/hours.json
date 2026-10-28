@@ -24,7 +24,7 @@
     },
     "friday": {
       "closed": false,
-      "open": "11:30",
+      "open": "12:30",
       "close": "22:00"
     },
     "saturday": {
